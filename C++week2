@@ -1,1 +1,45 @@
 This is a file for uploading my homework codes
+
+HELLO,GDUFS's codes:
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"Hello GDUFS!";
+	return 0;
+}
+
+W.A.MOZART's codes:
+include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"☆      ☆      ☆          ☆  ☆     ☆☆  ☆☆☆    ☆    ☆☆  ☆☆☆"<<'\n';
+	cout<<" ☆    ☆      ☆☆        ☆☆☆☆   ☆  ☆    ☆    ☆☆   ☆ ☆   ☆  "<<'\n';
+	cout<<"  ☆☆☆      ☆☆☆      ☆  ☆  ☆  ☆  ☆   ☆    ☆☆☆  ☆☆    ☆  "<<'\n';
+	cout<<"   ☆☆   ☆ ☆    ☆ ☆ ☆        ☆  ☆☆  ☆☆☆ ☆    ☆ ☆ ☆   ☆  "<<'\n';
+	return 0;
+}
+
+A program designed for adding two number together:
+1.The first version:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b;
+	cin>>a>>b;
+	cout<<a+b;
+	return 0; 
+ } 
+ Problem arosed that it can't finish complicated arithmetic,so I updated it
+ 2.The second version:
+#include<iostream>
+using namespace std;
+int main()
+{
+	double a,b;
+	cin>>a>>b;
+	cout<<a+b;
+	return 0; 
+ } 
