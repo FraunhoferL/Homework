@@ -1,0 +1,150 @@
+This is a file for my homewrk.
+
+code1
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=2,b=3;
+	float x=3.5,y=2.5;
+	cout<<"结果为"<<x+a%3*int(x+y)%2/4;
+	return 0; 
+ }
+
+code2
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8;
+	a+=a;
+	cout<<"结果是"<<a;
+	return 0;
+}
+
+code3
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8;
+	a-=2;
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code4
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8;
+	a*=2+3;
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code5
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8;
+	a/=a+a;
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code6
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	a%=(n%=2);
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code7
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	a+=a-=a*=a;
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code8
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	a=3*5;
+	cout<<"结果为"<<a*4;
+	return 0;
+}
+
+code9
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	n=(a=3,6*3);
+	cout<<"结果为"<<n;
+	return 0;
+}
+
+code10
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	n=a=3,6*3;
+	cout<<"结果为"<<n;
+	return 0;
+}
+
+code11
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,n=5;
+	a=++a||++n;
+	cout<<"结果为"<<a;
+	return 0;
+}
+
+code12
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=5,b=8;
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	cout<<"a="<<a<<endl; 
+	cout<<"b="<<b<<endl;
+	return 0;
+}
+
+code13
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=5,b=9;
+	a=a^b;
+	b=b^a;
+	a=a^b;
+	cout<<"a="<<a<<endl; 
+	cout<<"b="<<b<<endl;
+	return 0;
+}
