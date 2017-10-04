@@ -1,0 +1,49 @@
+This week's codes are as follows
+1.
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	char a,b;
+	cin>>x>>a>>y>>b;
+	cout<<"x="<<x<<endl;
+	cout<<"y="<<y<<endl;
+	cout<<"a="<<a<<endl;
+	cout<<"b="<<b<<endl;
+	return 0;
+}
+
+2.Some codes which can be used to count the number of spaces
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	int n=0;
+	ch=cin.get();
+	while(ch!='\n'){
+	if(ch==' ')
+	n++;
+	ch=cin.get();	
+	}
+	cout<<n;
+	return 0;
+}
+
+3.Some codes which can be used to calculate a triangle's area
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+	double a,b,c,S,Area;
+	cout<<"请输入三边长";
+	cin>>a>>b>>c ;
+	S=(a+b+c)/2;
+	Area=sqrt(S*(S-a)*(S-b)*(S-c));
+	cout.setf(ios::fixed,ios::floatfield);
+	cout<<"三角形面积为"<<setprecision(2)<<Area;
+	return 0; 
+}
