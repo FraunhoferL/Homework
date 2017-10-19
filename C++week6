@@ -1,0 +1,95 @@
+Below here are this week's codes
+
+1.
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"请输入年份"<<endl;
+	cin>>a;
+	b=a%400;
+	c=a%4;
+	if(b==0) cout<<"该年是闰年"<<endl;
+	else if(c==0) cout<<"该年是闰年"<<endl;
+	else cout<<"该年不是闰年"<<endl;
+	return 0;
+	
+}
+
+2.
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,j; 
+	for(i=1;i<=4;i++)
+	{
+		for(j=1;j<=i;j++)
+		cout<<" ";
+		for(j=1;j<=9-2*i;j++)
+		cout<<"*";
+		cout<<'\n';
+	}
+	for(i=1;i<=3;i++)
+	{
+		for(j=1;j<=4-i;j++)
+		cout<<" ";
+		for(j=1;j<=2*i+1;j++)
+		cout<<"*";
+		cout<<'\n';
+	}
+	return 0;
+}
+
+3.
+#include<iostream>  
+using namespace std;  
+int main()  
+    {  
+        int N,i,j,k,n=0;  
+        cout<<"请输入面值(1<=N<=1000)"<<endl;  
+        cin>>N;  
+        for(i=1;i<=N;i++)  
+        {  
+            for(j=1;j<=N/2;j++)  
+            {  
+                for(k=1;k<=N/5;k++)  
+                {  
+                    if(i*1+j*2+k*5==N)  
+                    {  
+                    cout<<"其中一元有："<<i<<"张"<<endl<<"二元有："<<j<<"张"<<endl<<"五元有："<<k<<"张"<<endl;  
+                    n++;  
+                    }  
+                }  
+            }  
+        }  
+        cout<<"一共有："<<n<<"种组合方式"<<endl;  
+        return 0;  
+}
+
+4.
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	int num1=0,num2=0,num3=0,num4=0,num5=0;
+	ch=cin.get();
+	while(ch!='\n')
+	{
+	if(65<=ch&&ch<=90)
+	num1++;
+	else if(97<=ch&&ch<=122)
+	num2++;
+	else if(48<=ch&&ch<=57)
+	num3++;
+	else if(ch==32)
+	num4++;
+	else
+	num5++;
+	ch=cin.get();
+	}
+	cout<<num1<<'\t'<<num2<<'\t'<<num3<<'\t'<<num4<<'\t'<<num5<<endl;
+	return 0;
+}
