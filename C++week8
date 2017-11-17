@@ -1,0 +1,72 @@
+Here're this week's codes:
+1.
+#include<iostream>
+using namespace std;
+double average(double a,double b,double c,double d)
+{
+	return((a+b+c+d)/4);
+ } 
+ int main()
+ {
+ 	double a,b,c,d,Average;
+ 	cout<<"请输入四个数字"<<endl;
+ 	cin>>a>>b>>c>>d;
+ 	Average=average(a,b,c,d);
+ 	cout<<"平均数为"<<Average<<endl;
+ 	return 0;
+ }
+ 
+ 2.
+ #include<iostream>
+using namespace std;
+double min(double a,double b)
+{
+	return(a<b?a:b);
+}
+int min(int a,int b)
+{
+	return(a<b?a:b);
+}
+int main()
+{
+	cout<<"请输入两个数字"<<endl;
+	double a,b;
+	cin>>a>>b; 
+	cout<<"较小数为"<<min(a,b)<<endl;
+}
+
+3.
+#include<iostream>
+using namespace std;
+void transform(int a)
+{
+	if(a>0)
+	{
+		transform(a/2);
+		cout<<a%2;
+	}
+}
+int main()
+{
+	int a,b;
+	cout<<"请输入十进制数字"<<endl;
+	cin>>a;
+	cout<<"该数字的二进制为"<<endl;
+	transform(a);
+	return 0; 
+}
+
+4.
+#include<iostream>
+using namespace std;
+#define Area(PI,r) PI*r*r
+int main()
+{
+	double a,PI,r;
+	cout<<"请输入半径"<<endl;
+	PI=3.14;
+	cin>>r;
+	a=Area(PI,r);
+	cout<<"面积为"<<a<<endl;
+	return 0;
+}
