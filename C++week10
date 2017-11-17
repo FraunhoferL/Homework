@@ -1,0 +1,75 @@
+Here're this week's codes:
+1.
+#include<iostream>
+using namespace std;
+void transform(int n)
+{
+    char s[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    if(n>=16)
+    {
+        transform(n/16);
+        cout<<s[n%16];
+    }
+    else
+        cout<<s[n];
+}
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<n<<" = ";
+    transform(n);
+    cout<<endl;
+    return 0;
+}
+
+2.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int x,y,sum=0;
+	cout<<"请输入数组的个数"<<endl;
+	cin>>x; 
+	cout<<"输入每个数组元素的个数"<<endl;
+	cin>>y;
+	int a[10][20]={0};
+	cout<<"请依次输入数组的每个元素"<<endl;
+	for(int i=0 ; i<x ; i++)
+	{
+		for(int j=0 ; j<y ; j++)
+		{
+			cin>>a[i][j];
+			sum=sum+a[i][j];
+		}
+	}
+	cout<<sum;
+	return 0;
+} 
+
+3.
+#include<iostream>
+#include<string.h>
+using namespace std;
+void my_strlwr(string a)
+{
+	int i,length;
+	length=sizeof(a);
+	for(i=0;i<=length;i++){
+	    if(65<=a[i]&&a[i]<=90)
+	       a[i]=a[i]+32;
+    }
+	for(i=0;i<=length;i++){
+	    cout<<a[i];       
+    }
+}
+int main()
+{
+	string a;
+	int i,length;
+	cout<<"请输入一个字符串"<<endl;
+	cin>>a;
+	my_strlwr(a);
+	return 0;
+}
